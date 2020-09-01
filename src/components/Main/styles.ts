@@ -23,11 +23,11 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.h2`
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
 `;
 
 export const Illustration = styled.img`
-  margin: 3rem;
+  margin-top: 3rem;
   width: min-content(30rem, 100%);
 `;

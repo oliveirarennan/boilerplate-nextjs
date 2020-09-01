@@ -1,21 +1,21 @@
-import * as S from './styles';
+import * as Styles from './styles';
 
 const Main = ({
   title = 'React Avançado',
-  description = 'TypeScript, ReactJS, NextJS e Styled Components'
+  description = 'TypeScript, ReactJs, NextJS e Styled Components'
 }) => (
-  <S.Wrapper>
-    <S.Logo
-      src="/img/logo.svg"
-      alt="Imagem de um átomo e React Avançado escrito ao lado."
+  <Styles.Wrapper>
+    <Styles.Logo
+      src="img/logo.svg"
+      alt="Imagem de um átomo e React Avançado escrito ao lado"
     />
-    <S.Title>{title}</S.Title>
-    <S.Description>{description}</S.Description>
-    <S.Illustration
-      src="/img/hero-illustration.svg"
-      alt="um desenvolvedor de frente para uma tela com codigo"
+    <Styles.Title>{title}</Styles.Title>
+    <Styles.Description>{description}</Styles.Description>
+    <Styles.Illustration
+      src="img/hero-illustration.svg"
+      alt="Desenvolvedor de fte para uma tela com código"
     />
-  </S.Wrapper>
+  </Styles.Wrapper>
 );
 
 export default Main;
