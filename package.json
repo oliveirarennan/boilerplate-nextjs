@@ -7,11 +7,17 @@
     "start": "next start",
     "lint": "next lint",
     "mylint": "eslint src --max-warnings=0",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "yarn test --watch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn mylint --fix"
+      "yarn mylint --fix", "yarn test --bail"
     ]
   },
   "dependencies": {
